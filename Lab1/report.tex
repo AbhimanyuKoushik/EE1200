@@ -11,6 +11,7 @@
 \usepackage{algpseudocode}
 \usepackage{tikz}
 \usepackage{longtable}
+\usepackage[section]{placeins}
 
 % Page Setup
 \geometry{a4paper, margin=1in}
@@ -96,7 +97,8 @@ The shape of the Lissajous figure is determined by the type of waveforms $x\brak
 \end{enumerate}
 
 \section{Results}
-\begin{figure*}[ht!]
+The results of the experiment are given below in the order $\to$ function generator, oscilloscope plot, verification python plot.
+\begin{figure*}[!htb]
     {\includegraphics[ width=0.31\textwidth]{./figs/data1_crop.png}}
     \hspace{\fill}
     {\includegraphics[ width=0.31\textwidth]{./figs/fig1_crop.png}}
@@ -104,7 +106,7 @@ The shape of the Lissajous figure is determined by the type of waveforms $x\brak
     {\includegraphics[ width=0.31\textwidth]{./figs/fig1_verify.png}}\\
     \caption{Lissajous Plot 1}
 \end{figure*}
-\begin{figure*}[ht!]
+\begin{figure*}[!htb]
     {\includegraphics[ width=0.31\textwidth]{./figs/data2_crop.png}}
     \hspace{\fill}
     {\includegraphics[ width=0.31\textwidth]{./figs/fig2_crop.png}}
@@ -112,7 +114,7 @@ The shape of the Lissajous figure is determined by the type of waveforms $x\brak
     {\includegraphics[ width=0.31\textwidth]{./figs/fig2_verify.png}}\\
     \caption{Lissajous Plot 2}
 \end{figure*}
-\begin{figure*}[ht!]
+\begin{figure*}[!htb]
     {\includegraphics[ width=0.31\textwidth]{./figs/data3_crop.png}}
     \hspace{\fill}
     {\includegraphics[ width=0.31\textwidth]{./figs/fig3_crop.png}}
@@ -120,7 +122,7 @@ The shape of the Lissajous figure is determined by the type of waveforms $x\brak
     {\includegraphics[ width=0.31\textwidth]{./figs/fig3_verify.png}}\\
     \caption{Lissajous Plot 3}
 \end{figure*}
-\begin{figure*}[ht!]
+\begin{figure*}[!htb]
     {\includegraphics[ width=0.31\textwidth]{./figs/data4_crop.png}}
     \hspace{\fill}
     {\includegraphics[ width=0.31\textwidth]{./figs/fig4_crop.png}}
@@ -128,7 +130,7 @@ The shape of the Lissajous figure is determined by the type of waveforms $x\brak
     {\includegraphics[ width=0.31\textwidth]{./figs/fig4_verify.png}}\\
     \caption{Lissajous Plot 4}
 \end{figure*}
-\begin{figure*}[ht!]
+\begin{figure*}[!htb]
     {\includegraphics[ width=0.31\textwidth]{./figs/data5_crop.png}}
     \hspace{\fill}
     {\includegraphics[ width=0.31\textwidth]{./figs/fig5_crop.png}}
@@ -136,7 +138,7 @@ The shape of the Lissajous figure is determined by the type of waveforms $x\brak
     {\includegraphics[ width=0.31\textwidth]{./figs/fig5_verify.png}}\\
     \caption{Lissajous Plot 5}
 \end{figure*}
-\begin{figure*}[ht!]
+\begin{figure*}[!htb]
     {\includegraphics[ width=0.31\textwidth]{./figs/data6_crop.png}}
     \hspace{\fill}
     {\includegraphics[ width=0.31\textwidth]{./figs/fig6_crop.png}}
@@ -144,12 +146,17 @@ The shape of the Lissajous figure is determined by the type of waveforms $x\brak
     {\includegraphics[ width=0.31\textwidth]{./figs/fig6_verify.png}}\\
     \caption{Lissajous Plot 6}
 \end{figure*}
-\begin{figure*}[ht!]
+
+\begin{figure*}[!htb]
     {\includegraphics[ width=0.5\textwidth]{./figs/one_time_data_crop.jpeg}}
     \hspace{\fill}
     {\includegraphics[ width=0.5\textwidth]{./figs/one_time_fig.jpeg}}
     \caption{One-Time Event Plot}
 \end{figure*}
+\section{Verification Codes}
+Python verification codes are provided below,
+\newline
+\url{https://github.com/AbhimanyuKoushik/Lab_reports/blob/main/Lab1/codes/code.py}
 
 \section{Discussion}
 The results demonstrate that:
