@@ -1,11 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
-def sawtooth(t, T, phase):
-    adjusted_t = t + phase * T / (2 * np.pi)  # Apply phase shift
-    return 2 * np.abs((adjusted_t / T) - np.floor((adjusted_t / T) + 0.5)) - 0.5
-
 def plot_parametric_function(parametric_func, t_range, fig_name, labels):
     """
     Plots a parametric function and saves the figure.
