@@ -10,8 +10,8 @@ end_val = 30.0     # End time
 phase = 0.0        # Phase of the square wave
 q0 = 0.0           # Initial charge on the capacitor
 h = 0.0001           # Time step
-C = 0.001          # Capacitance in farads
-R = 1000          # Resistance in ohms
+C = 0.0001          # Capacitance in farads
+R = 100          # Resistance in ohms
 
 # Calculate the number of points
 no_points = int((end_val - start_val) / h)
