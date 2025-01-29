@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage[section]{placeins}
+
+% Page Setup
+\geometry{a4paper, margin=1in}
+
+% Custom Commands
+\newcommand{\vecb}[1]{\mathbf{#1}}
+\newcommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+
+\vspace{3cm}
+
+\section*{Abstract}
+This report examines the response of an RC circuit to a square wave input of time period $T$, with particular focus on three cases: $T \gg RC$, $T = RC$, and $T \ll RC$. The behavior of the output voltage across the capacitor is analyzed in each case, highlighting the effect of the relationship between the time constant $RC$ and the period of the input signal.
+
+\section{Introduction}
+RC circuits, consisting of a resistor and a capacitor in series, exhibit dynamic behavior when subjected to time-varying inputs. The response of such circuits is governed by their time constant $\tau = RC$. When driven by a square wave input, the circuit's output depends on the interplay between the time constant and the time period $T$ of the square wave. This document explores the circuit's response for three distinct scenarios.
+
+\section{Theory}
+The governing equation for the voltage $V_C(t)$ across the capacitor in an RC circuit with input voltage $V_{\text{in}}(t)$ is:
+\begin{align}
+    iR + \frac{q}{C} &= V_{\text{in}}, \\
+    V_C &= \frac{q}{C}, \\
+    RC \frac{dV_C}{dt} + V_C &= V_{\text{in}}, \\
+    \frac{dV_C}{dt} + \frac{V_C}{RC} &= \frac{V_{\text{in}}}{RC}.
+\end{align}
+For a square wave input, $V_{\text{in}}(t)$ alternates between two levels (e.g., $V_0$ and $-V_0$) with a period $T$. The response depends on the relationship between $T$ and $RC$. Let:
+\begin{align}
+    V_{\text{in}}\brak{t} =a_0+\sum_{n=1}^{\infty}\brak{a_n \cos\brak{\frac{2\pi nt}{T}}+b_n\sin\brak{\frac{2\pi nt}{T}}}
+\end{align}
+As $V_{in}$ is a square, it will be in form $V_{in} = V_{dc} + V_{ac}$.\newline If the amplitude of $V_{in}$ is $5V$, then the average value of $V_{in}$ is  $\frac{1}{T}\brak{\int_{0}^{T}V_{in}dt} = \frac{5}{2}$. The value of $V_{dc} = \frac{5}{2}$.\newline
+As $V_{ac}$ is an odd function, it will only contain sine terms
+\begin{align}
+	 V_{\text{in}}\brak{t} =a_0+\sum_{n=1}^{\infty}b_n\sin\brak{\frac{2\pi nt}{T}}
+\end{align}
+The values of $b_n$ can be calculated as
+\begin{align}
+	b_n &= \frac{2}{T}\brak{\int_{\frac{T}{2}}^{-\frac{T}{2}}V_{in}\brak{t}\sin\brak{\frac{2\pi nt}{T}}dt}\\
+	b_n &= \frac{2}{T}\brak{\int_{0}^{\frac{T}{2}}V_0 \sin\brak{\frac{2\pi nt}{T}}dt + \int_{\frac{T}{2}}^{0}\brak{-V_0}\sin\brak{\frac{2\pi nt}{T}}dt}		
+\end{align}
+For even $n$, the terms cancel out, for odd $n$ the terms add up giving
+\begin{align}
+	b_n &= \frac{4V_0}{T}\brak{\int_{0}^{\frac{T}{2}}\sin\brak{\frac{2\pi nt}{T}}dt} \qquad \brak{\text{for odd n}}\\
+	b_n &= \frac{4V_0}{n\pi}
+\end{align}
+This gives
+\begin{align}
+	V_{in}\brak{t} &= a_0 + \frac{4V_0}{\pi}\brak{\sum_{n = 1,3,5,\dots}^{\infty}\frac{1}{n}\sin\brak{\frac{2\pi nt}{T}}}\\
+	V_{in}\brak{t} &= \frac{5}{2} + \frac{10}{\pi}\brak{\sin\brak{\frac{2\pi t}{T}}+\frac{1}{3}\sin\brak{\frac{6\pi t}{T}}+\frac{1}{5}\sin\brak{\frac{10\pi t}{T}}+\dots}
+\end{align}
+\section{Analysis}
+\subsection{Case 1: $T \gg RC$}
+When the period of the square wave is much greater than the time constant ($T \gg RC$), the capacitor has sufficient time to fully charge and discharge during each half-cycle. The output voltage $V_C(t)$ closely follows the input signal, with exponential transitions between $V_0$ and $-V_0$. The response can be expressed as:
+\begin{align}
+    V_C(t) = V_0 \left(1 - e^{-t/(RC)}\right) \quad \text{(during charging)},
+\end{align}
+\begin{align}
+    V_C(t) = -V_0 \left(1 - e^{-t/(RC)}\right) \quad \text{(during discharging)}.
+\end{align}
+
+\subsection{Case 2: $T = RC$}
+When the period of the square wave is comparable to the time constant ($T \approx RC$), the capacitor does not fully charge or discharge during each half-cycle. The output voltage exhibits noticeable attenuation and rounded transitions, reflecting an intermediate behavior.
+
+\subsection{Case 3: $T \ll RC$}
+For a square wave with a period much smaller than the time constant ($T \ll RC$), the capacitor cannot respond significantly within a single cycle. The output voltage $V_C(t)$ remains nearly constant, approximating the average value of the input signal. This behavior effectively acts as a low-pass filter, smoothing the square wave into a nearly constant DC level.
+
+\section{Discussion}
+The response of the RC circuit demonstrates its filtering properties, with the time constant $RC$ acting as a key determinant. For $T \gg RC$, the circuit behaves like a buffer, closely following the input. For $T \ll RC$, it acts as a low-pass filter, suppressing high-frequency components.
+
+\section{Conclusion}
+The analysis reveals the versatility of RC circuits in signal processing applications. By adjusting the time constant relative to the input signal's period, the circuit can function as a buffer, an attenuator, or a low-pass filter. This makes RC circuits fundamental in both analog and digital electronics.
+
+\end{document}
+
