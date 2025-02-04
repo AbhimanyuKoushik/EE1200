@@ -53,6 +53,35 @@ RC circuits, consisting of a resistor and a capacitor in series, exhibit dynamic
     \caption{RC Circuit with a 5V Square Wave Input}
 \end{figure}
 The reactance of a capacitor with capacitance $C$ is given by 
+\begin{align}
+	\chi_{C} = \frac{1}{j\omega C}
+\end{align}
+Where $j = \sqrt{-1}$ and $\omega$ is the Angular frequency of input voltage\newline
+The voltage across capacitor in an RC series circuit with sine input is given by
+\begin{align}
+	V_{\text{in}} &= V_R + V_C\\
+	V_R &= iR\\
+	V_C &= i\chi_{C}\\
+	V_{\text{in}} &= iR + i\chi_C\\
+	i &= \frac{V_{\text{in}}}{R+\chi_C}\\
+	V_C &= \frac{V_{\text{in}}}{R+\chi_C}\chi_C\\
+	V_C &= \frac{V_{\text{in}}}{1+j\omega RC}
+\end{align}
+The transfer function is given $H\brak{j\omega} = \frac{V_{\text{out}}}{V_\text{in}}$. For the given circuit
+\begin{align}
+	H\brak{j\omega} &= \frac{1}{1+j\omega RC}
+\end{align}
+The bode plot for amplitude is given by plotting $y = 20\log(\abs{H(j\omega)})$ against $x = \log(\omega)$.
+\begin{align}
+	y &= 20\log(\abs{H(j\omega)})\\
+	y &= 20\log(\frac{1}{\sqrt{1+(\omega RC)^2}})\\
+	y &= -10\log(1+(\omega RC)^2)\\
+	y &= -10\log(1+10^{2x}R^2C^2)
+\end{align}
+The function to be plotted in bode plot for the Amplitude will be 
+\begin{align}
+	y = -10\log(1+10^{2x}R^2C^2)
+\end{align}
 \section{Procedure}
 
 \begin{enumerate}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.31)  4 FEB 2025 20:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.31)  4 FEB 2025 20:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -888,165 +888,166 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [1
 
 {/opt/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (5.93011pt too wide) in paragraph at lines 69--71
+
+[2]
+Overfull \hbox (5.93011pt too wide) in paragraph at lines 98--100
 \OT1/cmr/m/n/12 To solve the gov-ern-ing dif-fer-en-tial equa-tion nu-mer-i-cal
 ly, we em-ploy the trape-zoidal method.
  []
 
 
-Overfull \hbox (9.66087pt too wide) detected at line 77
+Overfull \hbox (9.66087pt too wide) detected at line 106
 []
  []
 
 
-
-[2]
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 92.
+(hyperref)                removing `math shift' on input line 121.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gg' on input line 92.
+(hyperref)                removing `\gg' on input line 121.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 92.
+(hyperref)                removing `math shift' on input line 121.
 
 
 
 [3{/opt/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<./figs/greater_cont_crop.jpeg, id=90, 245.9589pt x 197.2971pt>
+
+[4]
+<./figs/greater_cont_crop.jpeg, id=109, 245.9589pt x 197.2971pt>
 File: ./figs/greater_cont_crop.jpeg Graphic file (type jpg)
 <use ./figs/greater_cont_crop.jpeg>
-Package pdftex.def Info: ./figs/greater_cont_crop.jpeg  used on input line 103.
+Package pdftex.def Info: ./figs/greater_cont_crop.jpeg  used on input line 132.
 
 (pdftex.def)             Requested size: 226.48395pt x 181.6781pt.
-<./figs/greater_cont_sim.png, id=91, 462.528pt x 346.896pt>
+<./figs/greater_cont_sim.png, id=110, 462.528pt x 346.896pt>
 File: ./figs/greater_cont_sim.png Graphic file (type png)
 <use ./figs/greater_cont_sim.png>
-Package pdftex.def Info: ./figs/greater_cont_sim.png  used on input line 105.
+Package pdftex.def Info: ./figs/greater_cont_sim.png  used on input line 134.
 (pdftex.def)             Requested size: 226.48395pt x 169.86406pt.
 
-Overfull \hbox (5.22217pt too wide) in paragraph at lines 103--106
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 132--135
 [][]   [] 
  []
 
-<./figs/greater_burst_crop.jpeg, id=93, 245.9589pt x 187.1793pt>
+<./figs/greater_burst_crop.jpeg, id=112, 245.9589pt x 187.1793pt>
 File: ./figs/greater_burst_crop.jpeg Graphic file (type jpg)
 <use ./figs/greater_burst_crop.jpeg>
-Package pdftex.def Info: ./figs/greater_burst_crop.jpeg  used on input line 111
+Package pdftex.def Info: ./figs/greater_burst_crop.jpeg  used on input line 140
 .
 (pdftex.def)             Requested size: 226.48395pt x 172.36128pt.
-<./figs/greater_burst_sim.png, id=94, 462.528pt x 346.896pt>
+<./figs/greater_burst_sim.png, id=113, 462.528pt x 346.896pt>
 File: ./figs/greater_burst_sim.png Graphic file (type png)
 <use ./figs/greater_burst_sim.png>
-Package pdftex.def Info: ./figs/greater_burst_sim.png  used on input line 113.
+Package pdftex.def Info: ./figs/greater_burst_sim.png  used on input line 142.
 (pdftex.def)             Requested size: 226.48395pt x 169.86406pt.
 
-Overfull \hbox (5.22217pt too wide) in paragraph at lines 111--114
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 140--143
 [][]   [] 
  []
 
 Excluding 'comment' comment.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 129.
+(hyperref)                removing `math shift' on input line 158.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 129.
+(hyperref)                removing `math shift' on input line 158.
 
 
 
-[4 <./figs/greater_cont_crop.jpeg> <./figs/greater_cont_sim.png> <./figs/greate
+[5 <./figs/greater_cont_crop.jpeg> <./figs/greater_cont_sim.png> <./figs/greate
 r_burst_crop.jpeg> <./figs/greater_burst_sim.png>]
-<./figs/equals_cont_crop.jpeg, id=103, 247.6452pt x 191.5155pt>
+<./figs/equals_cont_crop.jpeg, id=122, 247.6452pt x 191.5155pt>
 File: ./figs/equals_cont_crop.jpeg Graphic file (type jpg)
 <use ./figs/equals_cont_crop.jpeg>
-Package pdftex.def Info: ./figs/equals_cont_crop.jpeg  used on input line 135.
+Package pdftex.def Info: ./figs/equals_cont_crop.jpeg  used on input line 164.
 (pdftex.def)             Requested size: 226.48395pt x 175.15312pt.
-<./figs/equals_cont_sim.png, id=104, 462.528pt x 346.896pt>
+<./figs/equals_cont_sim.png, id=123, 462.528pt x 346.896pt>
 File: ./figs/equals_cont_sim.png Graphic file (type png)
 <use ./figs/equals_cont_sim.png>
-Package pdftex.def Info: ./figs/equals_cont_sim.png  used on input line 137.
+Package pdftex.def Info: ./figs/equals_cont_sim.png  used on input line 166.
 (pdftex.def)             Requested size: 226.48395pt x 169.86406pt.
 
-Overfull \hbox (5.22217pt too wide) in paragraph at lines 135--138
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 164--167
 [][]   [] 
  []
 
-<./figs/equal_burst_crop.jpeg, id=105, 251.2587pt x 191.2746pt>
+<./figs/equal_burst_crop.jpeg, id=124, 251.2587pt x 191.2746pt>
 File: ./figs/equal_burst_crop.jpeg Graphic file (type jpg)
 <use ./figs/equal_burst_crop.jpeg>
-Package pdftex.def Info: ./figs/equal_burst_crop.jpeg  used on input line 144.
+Package pdftex.def Info: ./figs/equal_burst_crop.jpeg  used on input line 173.
 (pdftex.def)             Requested size: 226.48395pt x 172.41988pt.
-<./figs/equals_burst_sim.png, id=106, 462.528pt x 346.896pt>
+<./figs/equals_burst_sim.png, id=125, 462.528pt x 346.896pt>
 File: ./figs/equals_burst_sim.png Graphic file (type png)
 <use ./figs/equals_burst_sim.png>
-Package pdftex.def Info: ./figs/equals_burst_sim.png  used on input line 146.
+Package pdftex.def Info: ./figs/equals_burst_sim.png  used on input line 175.
 (pdftex.def)             Requested size: 226.48395pt x 169.86406pt.
 
-Overfull \hbox (5.22217pt too wide) in paragraph at lines 144--147
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 173--176
 [][]   [] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 179.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ll' on input line 150.
+(hyperref)                removing `\ll' on input line 179.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `math shift' on input line 179.
 
 
 
-[5 <./figs/equals_cont_crop.jpeg> <./figs/equals_cont_sim.png> <./figs/equal_bu
+[6 <./figs/equals_cont_crop.jpeg> <./figs/equals_cont_sim.png> <./figs/equal_bu
 rst_crop.jpeg> <./figs/equals_burst_sim.png>]
-<./figs/lesser_cont_crop.jpeg, id=115, 304.4976pt x 240.9pt>
+<./figs/lesser_cont_crop.jpeg, id=134, 304.4976pt x 240.9pt>
 File: ./figs/lesser_cont_crop.jpeg Graphic file (type jpg)
 <use ./figs/lesser_cont_crop.jpeg>
-Package pdftex.def Info: ./figs/lesser_cont_crop.jpeg  used on input line 156.
+Package pdftex.def Info: ./figs/lesser_cont_crop.jpeg  used on input line 185.
 (pdftex.def)             Requested size: 226.48395pt x 179.18582pt.
-<./figs/lesser_cont_sim.png, id=116, 462.528pt x 346.896pt>
+<./figs/lesser_cont_sim.png, id=135, 462.528pt x 346.896pt>
 File: ./figs/lesser_cont_sim.png Graphic file (type png)
 <use ./figs/lesser_cont_sim.png>
-Package pdftex.def Info: ./figs/lesser_cont_sim.png  used on input line 158.
+Package pdftex.def Info: ./figs/lesser_cont_sim.png  used on input line 187.
 (pdftex.def)             Requested size: 226.48395pt x 169.86406pt.
 
-Overfull \hbox (5.22217pt too wide) in paragraph at lines 156--159
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 185--188
 [][]   [] 
  []
 
-<./figs/lesser_burst_crop.jpeg, id=117, 248.8497pt x 185.2521pt>
+<./figs/lesser_burst_crop.jpeg, id=136, 248.8497pt x 185.2521pt>
 File: ./figs/lesser_burst_crop.jpeg Graphic file (type jpg)
 <use ./figs/lesser_burst_crop.jpeg>
-Package pdftex.def Info: ./figs/lesser_burst_crop.jpeg  used on input line 165.
+Package pdftex.def Info: ./figs/lesser_burst_crop.jpeg  used on input line 194.
 
 (pdftex.def)             Requested size: 226.48395pt x 168.60512pt.
-<./figs/lesser_burst_sim.png, id=118, 462.528pt x 346.896pt>
+<./figs/lesser_burst_sim.png, id=137, 462.528pt x 346.896pt>
 File: ./figs/lesser_burst_sim.png Graphic file (type png)
 <use ./figs/lesser_burst_sim.png>
-Package pdftex.def Info: ./figs/lesser_burst_sim.png  used on input line 167.
+Package pdftex.def Info: ./figs/lesser_burst_sim.png  used on input line 196.
 (pdftex.def)             Requested size: 226.48395pt x 169.86406pt.
 
-Overfull \hbox (5.22217pt too wide) in paragraph at lines 165--168
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 194--197
 [][]   [] 
  []
 
 
-Overfull \hbox (28.68234pt too wide) in paragraph at lines 172--175
+Overfull \hbox (28.68234pt too wide) in paragraph at lines 201--204
 []$\OT1/cmtt/m/n/12 https : / / github . com / AbhimanyuKoushik / Lab _ reports
  / blob / main / Lab2 / codes / response .
  []
 
 
 
-[6 <./figs/lesser_cont_crop.jpeg> <./figs/lesser_cont_sim.png> <./figs/lesser_b
+[7 <./figs/lesser_cont_crop.jpeg> <./figs/lesser_cont_sim.png> <./figs/lesser_b
 urst_crop.jpeg> <./figs/lesser_burst_sim.png>] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
@@ -1056,27 +1057,28 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: EA9409E56012A76AAC822A81061526CB;1443.
  ) 
 Here is how much of TeX's memory you used:
- 42213 strings out of 473201
- 984936 string characters out of 5685387
- 1604340 words of memory out of 5000000
+ 42228 strings out of 473201
+ 985095 string characters out of 5685387
+ 1605340 words of memory out of 5000000
  64973 multiletter control sequences out of 15000+600000
  568106 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,87p,543b,891s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,12n,87p,543b,891s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt
 /texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/texliv
 e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2024/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/texlive/2024/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/texlive/2024/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmr17.pfb></opt/texlive/2024/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12
-.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (6 pages, 1876330 bytes).
+ublic/amsfonts/cm/cmr6.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></op
+t/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on report.pdf (7 pages, 1890169 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 40 named destinations out of 1000 (max. 500000)
+ 218 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 55 named destinations out of 1000 (max. 500000)
  161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
