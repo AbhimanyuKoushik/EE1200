@@ -23,7 +23,7 @@ w_end = 1e7
 #plt.figure()
 #plt.plot(*bode_amp(R, C, w_start, w_end, h))
 
-with open("./vals.txt", "r") as file:
+with open("./vals_1.txt", "r") as file:
     lines = file.readlines()
     lines.pop(0)
     for l in lines:
