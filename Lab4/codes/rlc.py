@@ -36,7 +36,7 @@ elif disc > 0:
 # Plot results
 plt.plot(t, Vc)
 plt.xlabel("Time (s)")
-plt.ylabel("Current (A)")
+plt.ylabel("Voltage across capacitor (Vc)")
 plt.title("Current vs. Time in an RLC Circuit")
 plt.show()
 
