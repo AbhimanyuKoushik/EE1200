@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import math as m
 
 # Circuit parameters
-R = 0.02   # Resistance in ohms
-C = 1e+1   # Capacitance in farads
-L = 1e-3   # Inductance in henries
+R = 23   # Resistance in ohms
+C = 1e-4   # Capacitance in farads
+L = 2.2e-3   # Inductance in henries
 Vc0 = 5           # Initial capacitor voltage
 
 a = R/L
@@ -14,7 +14,7 @@ disc = (a*a/4) - b
 
 # Simulation parameters
 stepsize = 0.0001  # Step size
-tmax = 1      # Maximum simulation time
+tmax = 0.01    # Maximum simulation time
 
 size = int(tmax / stepsize)
 

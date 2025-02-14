@@ -20,7 +20,7 @@ w_start = 1
 w_end = 1e7
 
 #plt.figure()
-plt.plot(*bode_amp(R, C, w_start, w_end, h))
+#plt.plot(*bode_amp(R, C, w_start, w_end, h))
 
 with open("./vals_2.txt", "r") as file:
     lines = file.readlines()
@@ -33,8 +33,8 @@ with open("./vals_2.txt", "r") as file:
             continue
         dt = float(dt)*(1e-6)
         
-        plt.scatter(np.log10(2*(np.pi)*f), np.log10(v), color="orange")
-        #plt.scatter(np.log10(2*np.pi*f), np.arctan(np.tan(-2*np.pi*f*dt)), color="orange")
+        #plt.scatter(np.log10(2*(np.pi)*f), np.log10(v), color="orange")
+        plt.scatter(np.log10(2*np.pi*f), np.arctan(np.tan(-2*np.pi*f*dt)), color="orange")
         #plt.scatter(np.log10(2*np.pi*f), (-2*np.pi*f*dt), color="orange")
 
 #plt.show()
@@ -43,6 +43,6 @@ with open("./vals_2.txt", "r") as file:
 #plt.scatter(np.log10(2*np.pi*100), -2*np.pi*100*0.08*1e-3)
 
 #plt.figure()
-#plt.plot(*bode_phase(R, C, w_start, w_end, h))
+plt.plot(*bode_phase(R, C, w_start, w_end, h))
 plt.show()
 

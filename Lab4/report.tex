@@ -1,0 +1,146 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Measurement of LC Oscillations Using an Oscilloscope}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+An LC circuit consists of an inductor (\(L\)) and a capacitor (\(C\)) connected together. When the capacitor is initially charged and then connected to the inductor, the energy oscillates between the electric field of the capacitor and the magnetic field of the inductor. This phenomenon is known as LC oscillation. The objective of this experiment is to measure and analyze the LC oscillations using an oscilloscope.
+
+\section{Theory}
+
+The oscillatory behavior of an LC circuit can be described using Kirchhoff's voltage law. The charge \(q(t)\) on the capacitor varies sinusoidally over time, and the current \(i(t)\) in the circuit is its time derivative. The key equations governing the system are:
+
+1. \textbf{Voltage across Capacitor:}
+   The Voltage across the capacitor at any time \(t\) is given by:
+  \begin{align*}
+    V_C(t) = \frac{q(t)}{C}  
+  \end{align*}
+   where \(V_C\) is the voltage across Capacitor, $C$ is the Capacitance, and $q(t)$ is the charge on the capacitor
+
+2. \textbf{Voltage across Inductor:}
+  The Voltage across the capacitor at any time \(t\) is given by:
+  \begin{align*}
+    V_L(t) = L\frac{di(t)}{dt}  
+  \end{align*}
+  where \(V_L\) is the voltage across Inductor, $L$ is the Inductance, and $\frac{di(t)}{dt} = \frac{d^2q}{dt^2}$ is the rate of change of current
+
+3. \textbf{Voltage across Resistor}
+  The Voltage across the Resistor at any time \(t\) is given by:
+  \begin{align*}
+    V_R(t) = Ri(t)  
+  \end{align*}
+  where \(V_R\) is the voltage across Resistor, $R$ is the Resistance, and $i(t) = \frac{dq}{dt}$ is the current
+
+If q is the charge on capacitor then the ciruit equation will  
+\begin{align*}
+  V_R + V_C + V_L &= 0\\
+  R\frac{dq}{dt} + \frac{q}{C} + L\frac{d^2q}{dt^2} &= 0
+\end{align*}
+
+The solution for the following differential equation with initial conditions $q_0 = CV_0$ and $q^{\prime}_0 = 0$ as initial voltage is $V_0$ and initial current is 0
+\begin{enumerate}
+  \item If $\frac{R^2}{4L^2} < \frac{1}{LC}$
+    \begin{align*}
+      V_C &= V_0e^{\frac{-Rt}{2L}}(\cos((\sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}})t)+(\frac{R}{2L\sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}})\sin((\sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}})t))
+    \end{align*}
+
+  \item If $\frac{R^2}{4L^2} = \frac{1}{LC}$
+    \begin{align*}
+      V_C = V_0(1+\frac{Rt}{2L})e^{\frac{-Rt}{2L}}
+    \end{align*}
+
+\end{enumerate}
+\section{Experimental Setup}
+
+To measure LC oscillations using an oscilloscope:
+- Use a charged capacitor (\(C\)) connected to an inductor (\(L\)).
+- Connect the oscilloscope probes across the capacitor or inductor to observe voltage variations.
+- A function generator may be used to provide an initial excitation pulse.
+
+The setup includes:
+- An oscilloscope.
+- A known capacitor (\(C\)).
+- An inductor (\(L\)).
+- A function generator (optional).
+
+Ensure proper calibration of the oscilloscope for accurate measurements.
+
+\section{Procedure}
+
+1. **[Circuit Assembly](pplx://action/followup):**
+   - Connect a charged capacitor to an inductor to form an LC circuit.
+   - Use a switch to initiate oscillations by discharging the capacitor through the inductor.
+
+2. **[Oscilloscope Configuration](pplx://action/followup):**
+   - Set up the oscilloscope to capture voltage across the capacitor or inductor.
+   - Adjust time base and vertical scale for clear visualization of oscillations.
+
+3. **[Measurement](pplx://action/followup):**
+   - Observe and record voltage waveforms on the oscilloscope.
+   - Measure parameters such as peak voltage, period (\(T\)), and frequency (\(f = 1/T\)).
+
+4. **[Data Analysis](pplx://action/followup):**
+   - Calculate angular frequency (\(\omega = 2\pi f = \sqrt{\frac{1}{LC}}\)).
+   - Verify theoretical predictions with experimental results.
+
+5. **[Repeat Measurements](pplx://action/followup):**
+   - Vary \(L\) or \(C\) values and repeat measurements to study their effects on oscillation frequency.
+
+\section{Results}
+
+Record observations such as:
+- Oscillation period (\(T\)).
+- Frequency (\(f = 1/T\)).
+- Peak voltages over time (to observe damping).
+
+Example data table:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Time (s) & Voltage (V) & ln(Voltage) \\ 
+        \hline
+        0 & 5 & 1.61 \\ 
+        0.001 & 4 & 1.39 \\ 
+        0.002 & 3 & 1.10 \\ 
+        ... & ... & ... \\ 
+        \hline
+    \end{tabular}
+    \caption{Voltage Decay Over Time}
+    \label{tab:data}
+\end{table}
+
+Plot voltage vs time and ln(voltage) vs time for further analysis.
+
+\section{Discussion}
+
+The experimental results should align with theoretical predictions:
+- The observed frequency should match \(f = \frac{1}{2\pi}\sqrt{\frac{1}{LC}}\).
+- Damping effects may be analyzed by fitting ln(voltage) data to a linear decay model.
+
+Discuss discrepancies due to resistance or measurement errors.
+
+\section{Conclusion}
+
+This experiment demonstrates how energy oscillates between electric and magnetic fields in an LC circuit. The measured frequency agrees with theoretical predictions, validating the fundamental principles of LC oscillations.
+
+Future work could include studying damped oscillations or using different inductors and capacitors for broader analysis.
+
+\bibliographystyle{plain}
+\bibliography{}
+
+\end{document}
