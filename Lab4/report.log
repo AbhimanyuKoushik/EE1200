@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.31)  14 FEB 2025 11:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.31)  22 FEB 2025 02:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -91,6 +91,17 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
+(/opt/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/opt/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (/opt/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -115,42 +126,179 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \Gin@req@height=\dimen151
 \Gin@req@width=\dimen152
 )
-(/opt/texlive/2024/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count282
-\float@exts=\toks23
-\float@box=\box54
-\@float@everytoks=\toks24
-\@floatcapt=\box55
+(/opt/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2025-01-21 v3.4.4 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count282
+\l__siunitx_number_exponent_fixed_int=\count283
+\l__siunitx_number_min_decimal_int=\count284
+\l__siunitx_number_min_integer_int=\count285
+\l__siunitx_number_round_precision_int=\count286
+\l__siunitx_number_lower_threshold_int=\count287
+\l__siunitx_number_upper_threshold_int=\count288
+\l__siunitx_number_group_first_int=\count289
+\l__siunitx_number_group_size_int=\count290
+\l__siunitx_number_group_minimum_int=\count291
+\l__siunitx_angle_tmp_dim=\dimen153
+\l__siunitx_angle_marker_box=\box54
+\l__siunitx_angle_unit_box=\box55
+\l__siunitx_compound_count_int=\count292
+
+(/opt/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+
+(/opt/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count293
 )
-(/opt/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
+(/opt/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
 
-(/opt/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
+(/opt/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
 (/opt/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-))
-\Gm@cnth=\count283
-\Gm@cntv=\count284
-\c@Gm@tempcnt=\count285
-\Gm@bindingoffset=\dimen153
-\Gm@wd@mp=\dimen154
-\Gm@odd@mp=\dimen155
-\Gm@even@mp=\dimen156
-\Gm@layoutwidth=\dimen157
-\Gm@layoutheight=\dimen158
-\Gm@layouthoffset=\dimen159
-\Gm@layoutvoffset=\dimen160
-\Gm@dimlist=\toks25
 )
+(/opt/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+\l__siunitx_table_tmp_box=\box56
+\l__siunitx_table_tmp_dim=\dimen154
+\l__siunitx_table_column_width_dim=\dimen155
+\l__siunitx_table_integer_box=\box57
+\l__siunitx_table_decimal_box=\box58
+\l__siunitx_table_uncert_box=\box59
+\l__siunitx_table_before_box=\box60
+\l__siunitx_table_after_box=\box61
+\l__siunitx_table_before_dim=\dimen156
+\l__siunitx_table_carry_dim=\dimen157
+\l__siunitx_unit_tmp_int=\count294
+\l__siunitx_unit_position_int=\count295
+\l__siunitx_unit_total_int=\count296
+
+(/opt/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen158
+\ar@mcellbox=\box62
+\extrarowheight=\dimen159
+\NC@list=\toks23
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box63
+))
+(/opt/texlive/2024/texmf-dist/tex/latex/physics/physics.sty
+Package: physics 
+
+(/opt/texlive/2024/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/opt/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
 (/opt/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count286
-\l__pdf_internal_box=\box56
+\l__color_backend_stack_int=\count297
+\l__pdf_internal_box=\box64
+))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+))
+(/opt/texlive/2024/texmf-dist/tex/latex/mnsymbol/MnSymbol.sty
+Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
+
+(/opt/texlive/2024/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
-(./report.aux)
+LaTeX Info: Redefining \dagger on input line 84.
+LaTeX Info: Redefining \ddagger on input line 84.
+LaTeX Info: Redefining \mathparagraph on input line 84.
+LaTeX Info: Redefining \mathsection on input line 84.
+LaTeX Info: Redefining \mathdollar on input line 84.
+LaTeX Info: Redefining \mathsterling on input line 84.
+LaTeX Info: Redefining \yen on input line 84.
+LaTeX Info: Redefining \circledR on input line 84.
+LaTeX Info: Redefining \circledS on input line 84.
+LaTeX Info: Redefining \Re on input line 84.
+LaTeX Info: Redefining \Im on input line 84.
+LaTeX Info: Redefining \dotplus on input line 84.
+LaTeX Info: Redefining \thicksim on input line 84.
+LaTeX Info: Redefining \thickapprox on input line 84.
+LaTeX Info: Redefining \veebar on input line 84.
+LaTeX Info: Redefining \barwedge on input line 84.
+LaTeX Info: Redefining \doublebarwedge on input line 84.
+LaTeX Info: Redefining \centerdot on input line 84.
+LaTeX Info: Redefining \divideontimes on input line 84.
+\symMnSyA=\mathgroup6
+\symMnSyB=\mathgroup7
+\symMnSyC=\mathgroup8
+\symMnSyD=\mathgroup9
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/MnSymbolE/m/n on input line 119.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Encoding `OMS' has changed to `U' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> U/MnSymbolF/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `MnSyA' in version `bold'
+(Font)                  U/MnSymbolA/m/n --> U/MnSymbolA/b/n on input line 121.
+LaTeX Font Info:    Overwriting symbol font `MnSyB' in version `bold'
+(Font)                  U/MnSymbolB/m/n --> U/MnSymbolB/b/n on input line 122.
+LaTeX Font Info:    Overwriting symbol font `MnSyC' in version `bold'
+(Font)                  U/MnSymbolC/m/n --> U/MnSymbolC/b/n on input line 123.
+LaTeX Font Info:    Overwriting symbol font `MnSyD' in version `bold'
+(Font)                  U/MnSymbolD/m/n --> U/MnSymbolD/b/n on input line 124.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/MnSymbolE/m/n --> OMX/MnSymbolE/b/n on input line 1
+25.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  U/MnSymbolF/m/n --> U/MnSymbolF/b/n on input line 126.
+LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 241.
+LaTeX Font Info:    Overwriting math alphabet `\mathcal' in version `bold'
+(Font)                  OMS/MnSymbolS/m/n --> OMS/MnSymbolS/b/n on input line 2
+41.
+LaTeX Info: Redefining \longrightarrow on input line 548.
+LaTeX Info: Redefining \longleftarrow on input line 549.
+LaTeX Info: Redefining \longleftrightarrow on input line 550.
+LaTeX Info: Redefining \Longrightarrow on input line 551.
+LaTeX Info: Redefining \Longleftarrow on input line 552.
+LaTeX Info: Redefining \Longleftrightarrow on input line 553.
+LaTeX Info: Redefining \longmapsto on input line 554.
+LaTeX Info: Redefining \vdots on input line 868.
+LaTeX Font Info:    Redeclaring math symbol \braceld on input line 1721.
+LaTeX Font Info:    Redeclaring math symbol \bracelu on input line 1722.
+LaTeX Font Info:    Redeclaring math symbol \bracerd on input line 1723.
+LaTeX Font Info:    Redeclaring math symbol \braceru on input line 1724.
+LaTeX Info: Redefining \downbracefill on input line 1799.
+LaTeX Info: Redefining \upbracefill on input line 1800.
+LaTeX Info: Redefining \overbrace on input line 1819.
+LaTeX Info: Redefining \underbrace on input line 1820.
+LaTeX Info: Redefining \surd on input line 1843.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 1845.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 1846.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 1848.
+)
+Package translations Info: No language package found. I am going to use `englis
+h' as default language. on input line 12.
+
+(/opt/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+
+(/opt/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(/opt/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -167,20 +315,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
-
 (/opt/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen161
-\scratchbox=\box57
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen162
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count298
+\scratchdimen=\dimen160
+\scratchbox=\box65
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen161
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks25
 ) (/opt/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -190,85 +337,82 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=452.9679pt
-* \textheight=700.50687pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=35.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./report.toc)
-\tf@toc=\write3
-\openout3 = `report.toc'.
+Package siunitx Warning: Detected the "physics" package:
+(siunitx)                omitting definition of \qty.
+(siunitx)                
+(siunitx)                If you want to use \qty with the siunitx definition,
+(siunitx)                add 
+(siunitx)                
+(siunitx)                    \AtBeginDocument{\RenewCommandCopy\qty\SI}
+(siunitx)                
+(siunitx)                to your preamble.
+
+
+(/opt/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-diction
+ary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 12.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+
+ (/opt/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+
+
+(/opt/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
 
 
 
 [1
 
-{/opt/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/opt/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/opt/texlive/2
+024/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/opt/texlive/2024/texmf-
+dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/opt/texlive/2024/texmf-dist/fonts
+/enc/dvips/mnsymbol/MnSymbolD.enc}{/opt/texlive/2024/texmf-dist/fonts/enc/dvips
+/mnsymbol/MnSymbolE.enc}]
 
-[2]
+[2{/opt/texlive/2024/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}]
 
-[3]
-No file report.bbl.
-
-
-[4] (./report.aux)
+[3] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2656 strings out of 473201
- 39908 string characters out of 5685387
- 451564 words of memory out of 5000000
- 25909 multiletter control sequences out of 15000+600000
- 564823 words of font info for 57 fonts, out of 8000000 for 9000
+ 9944 strings out of 473201
+ 204251 string characters out of 5685387
+ 554206 words of memory out of 5000000
+ 33105 multiletter control sequences out of 15000+600000
+ 576872 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,10n,65p,449b,211s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt
-/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/texliv
-e/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2024/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></opt/texlive/2024/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/texlive/2024/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></opt/texlive/2024/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr6.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr8.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt
-/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on report.pdf (4 pages, 132656 bytes).
+ 79i,12n,93p,333b,539s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/texlive/2024/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></op
+t/texlive/2024/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol6.pfb></opt/texli
+ve/2024/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></opt/texlive/2024
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/texlive/2024/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/texlive/2024/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb></opt/texlive/2024/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb></opt/texlive/2024/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi8.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+</opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></opt/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on report.pdf (3 pages, 185400 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
