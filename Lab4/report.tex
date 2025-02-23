@@ -1,9 +1,24 @@
-\documentclass[a4paper,12pt]{article}
-\usepackage{amsmath, amssymb, graphicx, siunitx}
-\usepackage{physics}
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{circuitikz}
+\usepackage{comment}
 \usepackage{MnSymbol}
-\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\usepackage{physics}
+\usepackage[section]{placeins}
 
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\geometry{a4paper, margin=1in}
 
 \title{Damped LC Oscillations}
 \author{Your Name}
@@ -21,7 +36,19 @@ This report explores the behavior of an RLC circuit exhibiting damped oscillatio
 An LC circuit consists of an inductor (L) and a capacitor (C), forming an oscillatory system. When a resistor (R) is added, the circuit exhibits damped oscillations, leading to energy dissipation over time.
 
 \section{Theory for Underdamped Case}
-Taking Kichoff's law in the circuit loop gives the equation 
+\begin{figure*}[h]
+\begin{center}
+\begin{circuitikz}
+\draw
+(0,0) to[C, l=$C$] (0,3)
+to (3,3)
+to[R, l=$R$] (3,1.5)
+to[L, l=$L$] (3,0)
+to (0,0);
+\end{circuitikz}
+\end{center}
+\end{figure*}
+Taking Kirchhoff's law in the circuit loop gives the equation 
 \begin{align*}
   L\frac{di}{dt} + iR + \frac{1}{C}\int_{}^{}idt &= 0\\
   L\frac{d^2q}{dt^2} + R\frac{dq}{dt} + \frac{q}{C} &= 0\\
@@ -65,6 +92,7 @@ For $\frac{R^2}{L^2} < \frac{4}{LC}$, the general solution is:\newline
 \section{Procedure}
 \begin{enumerate}
     \item Connect the circuit as per the circuit diagram.
+    \item Measure the internal resitance of the inductor using a multimeter.
     \item Oscilloscope's probes are to be connected across the inductor to measure the voltage across it. Set the display mode to $X - T$.
     \item Disconnect the capacitor and inductor to charge the capacitor.
     \item Use a Regulated DC Supply to provide $5 V$ DC voltage across the capacitor.
@@ -75,7 +103,24 @@ For $\frac{R^2}{L^2} < \frac{4}{LC}$, the general solution is:\newline
 \end{enumerate}
 
 \section{Simulation and Results}
-Numerical simulations were conducted using Python to visualize the circuit response. The plots show how the oscillations decay over time for different damping conditions.
+Numerical simulations were conducted using Python to visualize the circuit response.
+\begin{align}
+    R &= 24.5\,\Omega \text{ (internal resistance of inductor)}\\
+    L &= 2.2\,mH\\ 
+    C &= 460\,pF
+\end{align}
+Oscilloscope $\hspace{\fill}$ Simulation $\hspace{1in}$
+\FloatBarrier
+\begin{figure*}[!htb]
+    {\includegraphics[ width=0.5\textwidth]{./figs/rlc_real.jpeg}}
+    \hspace{\fill}
+    {\includegraphics[ width=0.5\textwidth]{./figs/rlc.png}}
+\end{figure*}
+
+\section{Verification Codes}
+Python verification codes are provided below,
+\newline
+\url{https://github.com/AbhimanyuKoushik/EE1200/blob/main/Lab4/codes/rlc.py}
 
 \section{Conclusion}
 Damped LC circuits exhibit different responses based on resistance. Understanding these behaviors is crucial in designing stable electronic systems.
