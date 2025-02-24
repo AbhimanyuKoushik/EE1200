@@ -56,9 +56,9 @@ Taking Kirchhoff's law in the circuit loop gives the equation
 \end{align*}
 \newpage
 This equation can be written as,
-\begin{align}
+\begin{align*}
     \frac{d^2q}{dt^2} + 2\xi\omega_{n}\brak{\frac{dq}{dt}} + \omega_{n}\frac{q}{LC} &= 0
-\end{align}
+\end{align*}
 where $\xi$ is the damping factor, $\xi = \frac{R}{2}\sqrt{\frac{C}{L}}$, and $\omega_{n}$ is the natural frequency, $\omega_{n} = \frac{1}{\sqrt{LC}}$.
 \newline
 
@@ -72,37 +72,35 @@ The solution to the given differential equation can be given by,
 where $s_1, s_2$ are the solutions for the quadratic equation $s^2 + 2\xi\omega_{n}s + \brak{\omega_{n}}^2 = 0$ and $c_1, c_2$ are constants.
 
 For an underdamped system ($\xi < 1$),
-\begin{align}
+\begin{align*}
     s_2 &= {s_1}^{\ast} = s^{\ast}\\
     c_2 &= {c_1}^{\ast} = c^{\ast}\\
     \implies q &= ce^{st} + c^{\ast}e^{s^{\ast}t}
-\end{align}
-
-Let $c = a+ib$, then
-\begin{align*}
-    s = \frac{-R}{2L} \pm i \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}\\
-    q = c e^{st} + \overline{c} e^{\overline{s}t}\\
-    q(0) = c + \overline{c} = 2 a = V_{C_0} \implies a = \frac{V_{C_0}}{2}\\
-    \frac{dq}{dt} = cs e^{st} + \overline{c} \overline{s} e^{\overline{s}t}\\
-    \frac{dq}{dt}\Bigr|_{t=0} = cs + \overline{c} \overline{s}\\
-    2 Re(cs) = 0 \implies Re(cs) = 0 \\
-    Re((\frac{V_{C_0}}{2} + ib) ( \frac{-R}{2L} + i \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} )) = 0\\
-    \frac{-V_{C_0} R}{2L} - b \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} &= 0\\
-    b = \frac{-V_{C_0} R}{2L \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}}
 \end{align*}
-Substituting the value of a and b gives the following
+Let $c = a+ib$ then
 \begin{align*}
-    q &= \brak{ \frac{V_{C_0}}{2} + i b } e^{\brak{ \frac{-R}{2L} + i \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} } t} + \brak{ \frac{V_{C_0}}{2} - i b } e^{\brak{ \frac{-R}{2L} - i \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} } t} \\
-    q &= \frac{V_{C_0}}{2} e^{\frac{-R}{2L}t} \brak{ \brak{ 1 + i \frac{2b}{V_{C_0}} } e^{i \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} t} + \brak{ 1 - i \frac{2b}{V_{C_0}} } e^{-i \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} t} } \\
-    q &= \frac{V_{C_0}}{2} e^{\frac{-R}{2L}t} \brak{ 2 \cos \brak{ \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} t } - \frac{2 b}{V_{C_0}} \sin \brak{ \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} t } } \\
-    q &= V_{C_0} e^{\frac{-R}{2L}t} \brak{ \cos \brak{ \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} t } + \frac{R}{2L\sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}} \sin \brak{\sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}} t } }
+  s = -\xi\omega_n \pm \omega_n\sqrt{\xi^2-1}\\
+  s = -\xi\omega_n \pm i\omega_n\sqrt{1-\xi^2}\\
+  q\brak{0} = ce^{0s} + c^{\ast}e^{0s^{\ast}}\\
+  q\brak{0} = c + c^{\ast}\\
+  q\brak{0} = 2a\\
+  a = \frac{CV_{C_0}}{2}\\
+  q^{\prime}\brak{0} = cs + c^{\ast}s^{\ast}\\
+  \brak{a+ib}\brak{-\xi\omega_n + i\omega_n\sqrt{1-\xi^2}} + \brak{a-ib}\brak{-\xi\omega_n - i\omega_n\sqrt{1-\xi^2}} = 0\\
+  -a\xi\omega_n - b\omega_n\sqrt{1-\xi^2} = 0\\
+  b = \frac{-a\xi}{\sqrt{1-\xi^2}}\\
+  b = \frac{-CV_{C_0}\xi}{2\sqrt{1-\xi^2}}
 \end{align*}
-
+Substituting the value of $a$ and $b$ gives
+\begin{align*}
+  q\brak{t} = e^{-\xi\omega_n t}\brak{\brak{a+ib}e^{i\omega_n t\sqrt{1-\xi^2}} + \brak{a-ib}e^{-i\omega_n t\sqrt{1-\xi^2}}}\\
+  q\brak{t} = e^{-\xi\omega_n t}\brak{2a\cos\brak{\brak{\omega_n\sqrt{1-\xi^2}}t} - 2b\sin\brak{\brak{\omega_n\sqrt{1-\xi^2}}t}}\\
+  q\brak{t} = e^{-\xi\omega_n t}\brak{CV_{C_0}\cos\brak{\brak{\omega_n\sqrt{1-\xi^2}}t} + \frac{CV_{C_0}\xi}{\sqrt{1-\xi^2}}\sin\brak{\brak{\omega_n\sqrt{1-\xi^2}}t}}\\
+ \end{align*}
 
 \section{Solution for Underdamped Case}
-For $\frac{R^2}{L^2} < \frac{4}{LC}$, the general solution is:\newline
-$q = V_{C_0} e^{\frac{-R}{2L}t} \brak{ \cos \brak{\brak{ \sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}} t } + \frac{R}{2L\sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}} \sin \brak{\brak{\sqrt{\frac{1}{LC} - \frac{R^2}{4L^2}}}t } }$
-
+For $\xi < 1$, the general solution is:\newline
+$V\brak{t} = V_{C_0}e^{-\xi\omega_n t}\brak{\cos\brak{\brak{\omega_n\sqrt{1-\xi^2}}t} + \frac{\xi}{\sqrt{1-\xi^2}}\sin\brak{\brak{\omega_n\sqrt{1-\xi^2}}t}}$
 \section{Procedure}
 \begin{enumerate}
     \item Connect the circuit as per the circuit diagram.
