@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import math as m
 
 # Circuit parameters
-R = 24.5   # Resistance in ohms
-C = 460e-12   # Capacitance in farads
+R = 25.3 + 43.5   # Resistance in ohms
+C = 4150e-12   # Capacitance in farads
 L = 2.2e-3   # Inductance in henries
 Vc0 = 5           # Initial capacitor voltage
 

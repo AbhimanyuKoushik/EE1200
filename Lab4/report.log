@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.4)  23 FEB 2025 12:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.4)  24 FEB 2025 13:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,41 +973,41 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
 (/opt/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+[1
+
+{/opt/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/opt/texlive/2
+024/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolE.enc}{/opt/texlive/2024/texmf-
+dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/opt/texlive/2024/texmf-dist/fonts
+/enc/dvips/mnsymbol/MnSymbolF.enc}{/opt/texlive/2024/texmf-dist/fonts/enc/dvips
+/mnsymbol/MnSymbolD.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
 
 
-[1
-
-{/opt/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/opt/texlive/2
-024/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolC.enc}{/opt/texlive/2024/texmf-
-dist/fonts/enc/dvips/mnsymbol/MnSymbolF.enc}{/opt/texlive/2024/texmf-dist/fonts
-/enc/dvips/mnsymbol/MnSymbolD.enc}{/opt/texlive/2024/texmf-dist/fonts/enc/dvips
-/mnsymbol/MnSymbolE.enc}]
-
 [2{/opt/texlive/2024/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}]
-<./figs/rlc_real.jpeg, id=65, 330.033pt x 230.0595pt>
+
+[3]
+<./figs/rlc_real.jpeg, id=80, 330.033pt x 230.0595pt>
 File: ./figs/rlc_real.jpeg Graphic file (type jpg)
 <use ./figs/rlc_real.jpeg>
-Package pdftex.def Info: ./figs/rlc_real.jpeg  used on input line 115.
+Package pdftex.def Info: ./figs/rlc_real.jpeg  used on input line 129.
 (pdftex.def)             Requested size: 226.48395pt x 157.87766pt.
-<./figs/rlc.png, id=66, 462.528pt x 346.896pt>
+<./figs/rlc.png, id=81, 462.528pt x 346.896pt>
 File: ./figs/rlc.png Graphic file (type png)
 <use ./figs/rlc.png>
-Package pdftex.def Info: ./figs/rlc.png  used on input line 117.
+Package pdftex.def Info: ./figs/rlc.png  used on input line 131.
 (pdftex.def)             Requested size: 226.48395pt x 169.86406pt.
 
-Overfull \hbox (5.22217pt too wide) in paragraph at lines 115--118
+Overfull \hbox (5.22217pt too wide) in paragraph at lines 129--132
 [][]   [] 
  []
 
 
 
-[3 <./figs/rlc_real.jpeg> <./figs/rlc.png>]
-
-[4] (./report.aux)
+[4 <./figs/rlc_real.jpeg> <./figs/rlc.png>] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1016,9 +1016,9 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D9648C92F95BB5670478D46B0C292530;963.
  ) 
 Here is how much of TeX's memory you used:
- 44943 strings out of 473201
- 1018670 string characters out of 5692682
- 1626369 words of memory out of 5000000
+ 44947 strings out of 473201
+ 1018710 string characters out of 5692682
+ 1622464 words of memory out of 5000000
  67671 multiletter control sequences out of 15000+600000
  577041 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1036,10 +1036,10 @@ r12.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
 </opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></opt/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texlive/2024
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (4 pages, 566683 bytes).
+Output written on report.pdf (4 pages, 569290 bytes).
 PDF statistics:
- 172 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
+ 177 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
  79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
