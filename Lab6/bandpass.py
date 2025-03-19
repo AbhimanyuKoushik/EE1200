@@ -2,11 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Component values
-C1_highpass, C2_highpass, C1_lowpass, C2_lowpass = 100e-9, 100e-9, 100e-9, 100e-9  # 100 nF
-R1_highpass, R2_highpass, R1_lowpass, R2_lowpass = 5e3, 5e3, 5e3, 5e3  # 5 kΩ
+C1_highpass, C2_highpass, C1_lowpass, C2_lowpass = 220e-9, 220e-9, 200e-9, 220e-9  # 100 nF
+R1_highpass, R2_highpass, R1_lowpass, R2_lowpass = 4.6e3, 4.6e3, 1e3, 1e3  # 5 kΩ
 
 # Frequency range (log scale)
-frequencies = np.logspace(1, 5, 1000)  # 10 Hz to 100 kHz
+frequencies = np.linspace(0, 1e6, 100000)  # 10 Hz to 100 kHz
 w = 2 * np.pi * frequencies  # Convert to angular frequency
 
 # Low-pass filter magnitude response
@@ -19,12 +19,7 @@ def lowpass(w, C1, C2, R1, R2):
     return 20 * np.log10(magnitude)  # Use log10, not log
 
 def bandpass(w, C1_highpass, C2_highpass, C1_lowpass, C2_lowpass, R1_highpass, R2_highpass, R1_lowpass, R2_lowpass):
-    magnitudeLowpass = 1 / (np.sqrt((1 - (w ** 2) * C1_lowpass * C2_lowpass * R1_lowpass * R2_lowpass) ** 2
-                                    + (w * C1_lowpass * (R1_lowpass + R2_lowpass)) ** 2))
-    magnitudeHighpass = ((w ** 2) * C1_highpass * C2_highpass * R1_highpass * R2_highpass)/(np.sqrt((1 - (w ** 2)
-                    * C1_highpass * C2_highpass * R1_highpass * R2_highpass) ** 2 + (w * R2_highpass * (C1_highpass + C2_highpass)) ** 2))
-    magnitude = magnitudeHighpass * magnitudeLowpass
-    return 20 * np.log10(magnitude)
+    return highpass(w, C1_highpass, C2_highpass, R1_highpass, R2_highpass) + lowpass(w, C1_lowpass, C2_lowpass, R1_lowpass, R2_lowpass)
 
 # Compute response
 y_values = bandpass(w, C1_highpass, C2_highpass, C1_lowpass, C2_lowpass, R1_highpass, R2_highpass, R1_lowpass, R2_lowpass)
@@ -37,20 +32,18 @@ cutoff_level = -3  # -3 dB standard cutoff level
 
 # Plot
 plt.figure(figsize=(8, 5))
-plt.semilogx(frequencies, y_values, label="Low-Pass Filter", color="b", linewidth=2)
+plt.xlim(0, 7)
+plt.plot(np.log10(w), y_values, label="Band-Pass Filter", color="b", linewidth=2)
 
 with open("./vals_bandpass.txt", "r") as file:
     lines = file.readlines()
     lines.pop(0)
     for l in lines:
-        f, v, dt = l.split()
+        f, v = l.split()
         f = float(f)
         v = float(v)
-        if dt == "0":
-            continue
-        dt = float(dt)*(1e-6)
         
-        plt.scatter(np.log10(2*(np.pi)*f), np.log10(v), color="orange")
+        plt.scatter(np.log10(2*(np.pi)*f), 20*np.log10(v/5), color="orange")
 
 # Customization
 plt.xlabel("Frequency (Hz)", fontsize=12)

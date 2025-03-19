@@ -2,11 +2,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Component values
-C1, C2 = 100e-9, 100e-9  # 100 nF
-R1, R2 = 5e3, 5e3  # 5 kΩ
+C1, C2 = 85e-9, 85e-9  # 100 nF
+R1, R2 = 1e3, 1e3  # 5 kΩ
 
 # Frequency range (log scale)
-frequencies = np.logspace(1, 5, 1000)  # 10 Hz to 100 kHz
+frequencies = np.linspace(10, 1e5, 10000)  # 10 Hz to 100 kHz
 w = 2 * np.pi * frequencies  # Convert to angular frequency
 
 # Low-pass filter magnitude response
@@ -23,20 +23,19 @@ cutoff_level = -3  # -3 dB standard cutoff level
 
 # Plot
 plt.figure(figsize=(8, 5))
-plt.semilogx(frequencies, y_values, label="Low-Pass Filter", color="b", linewidth=2)
+plt.xlim(0, 6)
+plt.plot(np.log10(w), y_values, label="Low-Pass Filter", color="b", linewidth=2)
 
 with open("./vals_lowpass.txt", "r") as file:
     lines = file.readlines()
     lines.pop(0)
     for l in lines:
-        f, v, dt = l.split()
+        f, v = l.split()
         f = float(f)
         v = float(v)
-        if dt == "0":
-            continue
-        dt = float(dt)*(1e-6)
-        
-        plt.scatter(np.log10(2*(np.pi)*f), np.log10(v), color="orange")
+        print(f, v)
+                
+        plt.scatter(np.log10(2*(np.pi)*f), 20*np.log10(v/5), color="orange")
 
 # Customization
 plt.xlabel("Frequency (Hz)", fontsize=12)
