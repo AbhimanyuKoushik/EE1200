@@ -35,6 +35,7 @@ plt.figure(figsize=(8, 5))
 plt.xlim(0, 7)
 plt.plot(np.log10(w), y_values, label="Band-Pass Filter", color="b", linewidth=2)
 
+print("f, |H(jw)|")
 with open("./vals_bandpass.txt", "r") as file:
     lines = file.readlines()
     lines.pop(0)
@@ -43,12 +44,13 @@ with open("./vals_bandpass.txt", "r") as file:
         f = float(f)
         v = float(v)
         
+        print(np.log10(2*(np.pi)*f), 20*np.log10(v/5))
         plt.scatter(np.log10(2*(np.pi)*f), 20*np.log10(v/5), color="orange")
 
 # Customization
 plt.xlabel("Frequency (Hz)", fontsize=12)
 plt.ylabel("Magnitude (dB)", fontsize=12)
-plt.title("Low-Pass Filter Frequency Response", fontsize=14)
+plt.title("Band-Pass Filter Frequency Response", fontsize=14)
 plt.grid(which="both", linestyle="--", linewidth=0.5)
 plt.axhline(cutoff_level, color="r", linestyle="--", linewidth=1, label="-3 dB Cutoff")
 plt.axvline(fc, color="g", linestyle="--", linewidth=1, label=f"Cutoff Frequency: {fc:.1f} Hz")

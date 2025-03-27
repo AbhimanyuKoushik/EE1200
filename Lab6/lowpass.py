@@ -26,6 +26,7 @@ plt.figure(figsize=(8, 5))
 plt.xlim(0, 6)
 plt.plot(np.log10(w), y_values, label="Low-Pass Filter", color="b", linewidth=2)
 
+print("f, |H(jw)|")
 with open("./vals_lowpass.txt", "r") as file:
     lines = file.readlines()
     lines.pop(0)
@@ -33,7 +34,7 @@ with open("./vals_lowpass.txt", "r") as file:
         f, v = l.split()
         f = float(f)
         v = float(v)
-        print(f, v)
+        print(np.log10(2*(np.pi)*f), 20*np.log10(v/5))
                 
         plt.scatter(np.log10(2*(np.pi)*f), 20*np.log10(v/5), color="orange")
 
