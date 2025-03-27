@@ -329,17 +329,6 @@ The LEDs provided a visual representation of the counter states, with each LED c
 
 The Mod-7 asynchronous counter using T flip-flops was successfully designed and implemented. The counter correctly cycled through states 0 to 6 before resetting to state 0, skipping state 7 as intended. The timing diagram observed on the CRO matched the expected behavior, confirming the proper operation of the counter.
 
-Key findings from this experiment:
-\begin{itemize}
-    \item JK flip-flops can be effectively configured as T flip-flops by connecting both J and K inputs to logic 1.
-    \item Asynchronous counters are simple to implement but have inherent propagation delays.
-    \item The modulus of a counter can be controlled by implementing appropriate reset logic.
-    \item The 3-input NAND gate successfully detected state 7 and reset the counter to state 0.
-    \item LEDs provided an intuitive visual representation of the counter states, enhancing the observability of the circuit's operation.
-\end{itemize}
-
-This experiment demonstrated the fundamental principles of digital counters and their implementation using flip-flops. The asynchronous counter design provides a simple yet effective solution for applications where exact timing is not critical. The addition of LED indicators improved the visibility of the counter's operation, making it easier to verify its functionality without relying solely on measurement equipment.
-
 For applications requiring precise timing, synchronous counters would be more appropriate to eliminate the propagation delay issues inherent in asynchronous designs. However, the simplicity and ease of implementation of asynchronous counters make them suitable for many practical applications where slight timing discrepancies are acceptable.
 
 \end{document}
