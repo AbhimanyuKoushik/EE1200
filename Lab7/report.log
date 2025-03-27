@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.17)  27 MAR 2025 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.17)  27 MAR 2025 20:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1014,95 +1014,95 @@ Package pdftex.def Info: ./figs/Tcounter.png  used on input line 204.
 <./figs/counter_0.jpeg, id=110, 1204.5pt x 1606.0pt>
 File: ./figs/counter_0.jpeg Graphic file (type jpg)
 <use ./figs/counter_0.jpeg>
-Package pdftex.def Info: ./figs/counter_0.jpeg  used on input line 243.
+Package pdftex.def Info: ./figs/counter_0.jpeg  used on input line 246.
 (pdftex.def)             Requested size: 171.99922pt x 229.32298pt.
 <./figs/counter_1.jpeg, id=111, 1204.5pt x 1606.0pt>
 File: ./figs/counter_1.jpeg Graphic file (type jpg)
 <use ./figs/counter_1.jpeg>
-Package pdftex.def Info: ./figs/counter_1.jpeg  used on input line 245.
+Package pdftex.def Info: ./figs/counter_1.jpeg  used on input line 248.
 (pdftex.def)             Requested size: 171.99922pt x 229.32298pt.
 
-Overfull \hbox (33.86351pt too wide) in paragraph at lines 243--246
+Overfull \hbox (33.86351pt too wide) in paragraph at lines 246--249
 [][]   [] 
  []
 
-<./figs/counter_2.jpeg, id=112, 1204.5pt x 1606.0pt>
+
+
+[5]
+<./figs/counter_2.jpeg, id=120, 1204.5pt x 1606.0pt>
 File: ./figs/counter_2.jpeg Graphic file (type jpg)
 <use ./figs/counter_2.jpeg>
-Package pdftex.def Info: ./figs/counter_2.jpeg  used on input line 251.
+Package pdftex.def Info: ./figs/counter_2.jpeg  used on input line 254.
 (pdftex.def)             Requested size: 171.99922pt x 229.32298pt.
-<./figs/counter_3.jpeg, id=113, 1204.5pt x 1606.0pt>
+<./figs/counter_3.jpeg, id=121, 1204.5pt x 1606.0pt>
 File: ./figs/counter_3.jpeg Graphic file (type jpg)
 <use ./figs/counter_3.jpeg>
-Package pdftex.def Info: ./figs/counter_3.jpeg  used on input line 253.
+Package pdftex.def Info: ./figs/counter_3.jpeg  used on input line 256.
 (pdftex.def)             Requested size: 171.99922pt x 229.32298pt.
 
-Overfull \hbox (33.86351pt too wide) in paragraph at lines 251--254
+Overfull \hbox (33.86351pt too wide) in paragraph at lines 254--257
 [][]   [] 
  []
 
-
-
-[5 <./figs/counter_0.jpeg> <./figs/counter_1.jpeg>]
-<./figs/counter_4.jpeg, id=123, 1204.5pt x 1606.0pt>
+<./figs/counter_4.jpeg, id=122, 1204.5pt x 1606.0pt>
 File: ./figs/counter_4.jpeg Graphic file (type jpg)
 <use ./figs/counter_4.jpeg>
-Package pdftex.def Info: ./figs/counter_4.jpeg  used on input line 259.
+Package pdftex.def Info: ./figs/counter_4.jpeg  used on input line 262.
 (pdftex.def)             Requested size: 171.99922pt x 229.32298pt.
-<./figs/counter_5.jpeg, id=124, 1204.5pt x 1606.0pt>
+<./figs/counter_5.jpeg, id=123, 1204.5pt x 1606.0pt>
 File: ./figs/counter_5.jpeg Graphic file (type jpg)
 <use ./figs/counter_5.jpeg>
-Package pdftex.def Info: ./figs/counter_5.jpeg  used on input line 261.
+Package pdftex.def Info: ./figs/counter_5.jpeg  used on input line 264.
 (pdftex.def)             Requested size: 171.99922pt x 229.32298pt.
 
-Overfull \hbox (33.86351pt too wide) in paragraph at lines 259--262
+Overfull \hbox (33.86351pt too wide) in paragraph at lines 262--265
 [][]   [] 
  []
 
-<./figs/counter_6.jpeg, id=125, 1204.5pt x 1606.0pt>
+
+
+[6 <./figs/counter_0.jpeg> <./figs/counter_1.jpeg> <./figs/counter_2.jpeg> <./f
+igs/counter_3.jpeg>]
+<./figs/counter_6.jpeg, id=130, 1204.5pt x 1606.0pt>
 File: ./figs/counter_6.jpeg Graphic file (type jpg)
 <use ./figs/counter_6.jpeg>
-Package pdftex.def Info: ./figs/counter_6.jpeg  used on input line 267.
+Package pdftex.def Info: ./figs/counter_6.jpeg  used on input line 270.
 (pdftex.def)             Requested size: 171.99922pt x 229.32298pt.
 File: ./figs/counter_0.jpeg Graphic file (type jpg)
 <use ./figs/counter_0.jpeg>
-Package pdftex.def Info: ./figs/counter_0.jpeg  used on input line 269.
+Package pdftex.def Info: ./figs/counter_0.jpeg  used on input line 272.
 (pdftex.def)             Requested size: 171.99922pt x 229.32298pt.
 
-Overfull \hbox (33.86351pt too wide) in paragraph at lines 267--270
+Overfull \hbox (33.86351pt too wide) in paragraph at lines 270--273
 [][]   [] 
  []
 
-
-
-[6 <./figs/counter_2.jpeg> <./figs/counter_3.jpeg> <./figs/counter_4.jpeg> <./f
-igs/counter_5.jpeg>]
-<./figs/cro_1.jpeg, id=132, 4111.36pt x 3083.52pt>
+<./figs/cro_1.jpeg, id=131, 4111.36pt x 3083.52pt>
 File: ./figs/cro_1.jpeg Graphic file (type jpg)
 <use ./figs/cro_1.jpeg>
-Package pdftex.def Info: ./figs/cro_1.jpeg  used on input line 277.
+Package pdftex.def Info: ./figs/cro_1.jpeg  used on input line 280.
 (pdftex.def)             Requested size: 301.00192pt x 225.7491pt.
-<./figs/cro_2.jpeg, id=133, 4111.36pt x 3083.52pt>
+<./figs/cro_2.jpeg, id=132, 4111.36pt x 3083.52pt>
 File: ./figs/cro_2.jpeg Graphic file (type jpg)
 <use ./figs/cro_2.jpeg>
-Package pdftex.def Info: ./figs/cro_2.jpeg  used on input line 283.
+Package pdftex.def Info: ./figs/cro_2.jpeg  used on input line 286.
 (pdftex.def)             Requested size: 301.00192pt x 225.7491pt.
-<./figs/cro_3.jpeg, id=134, 1606.0pt x 1204.5pt>
+<./figs/cro_3.jpeg, id=133, 1606.0pt x 1204.5pt>
 File: ./figs/cro_3.jpeg Graphic file (type jpg)
 <use ./figs/cro_3.jpeg>
-Package pdftex.def Info: ./figs/cro_3.jpeg  used on input line 289.
+Package pdftex.def Info: ./figs/cro_3.jpeg  used on input line 292.
 (pdftex.def)             Requested size: 301.00192pt x 225.7513pt.
 
 
-[7 <./figs/counter_6.jpeg> <./figs/cro_1.jpeg>]
+[7 <./figs/counter_4.jpeg> <./figs/counter_5.jpeg> <./figs/counter_6.jpeg>]
 
 LaTeX Warning: Text page 8 contains only floats.
 
 
 
-[8 <./figs/cro_2.jpeg> <./figs/cro_3.jpeg>]
+[8 <./figs/cro_1.jpeg> <./figs/cro_2.jpeg>]
 
-[9]
+[9 <./figs/cro_3.jpeg>]
 
 [10] (./report.aux)
  ***********
@@ -1130,7 +1130,7 @@ ts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/2025/texmf-dist/fonts/type1
 amsfonts/cm/cmr17.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmr8.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt1
 2.pfb></opt/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (10 pages, 3874168 bytes).
+Output written on report.pdf (10 pages, 3874255 bytes).
 PDF statistics:
  224 PDF objects out of 1000 (max. 8388607)
  175 compressed objects within 2 object streams
