@@ -34,12 +34,12 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{BCD Counter with T Flip-Flops}
-\fancyhead[R]{Abhimanyu Koushik EE24BTECH11024}
+\fancyhead[R]{EE24BTECH11002 EE24BTECH11024}
 \fancyfoot[C]{\thepage}
 
 % Title setup
 \title{\textbf{BCD Counter with T Flip-Flops}}
-\author{\textbf{Abhimanyu Koushik EE24BTECH11024}}
+\author{\textbf{EE24BTECH11002 EE24BTECH11024}}
 \date{\today}
 
 % Adjust section spacing for a cleaner look
@@ -93,13 +93,6 @@ A T flip-flop can be constructed from a JK flip-flop by connecting both J and K 
 
 \subsection*{BCD Counter}
 A BCD counter counts from 0 to 9 in binary (0000 to 1001) and then resets to 0. Since a 4-bit binary counter can represent 16 states (0--15), additional logic is required to skip the invalid states (10--15). This counter is known as a modulo-10 counter.
-
-\subsection*{Up/Down Counter Operation}
-An up/down (bidirectional) counter can count in both ascending and descending sequences based on a control input. The mode signal \(M\) controls the direction:
-\begin{itemize}
-    \item \(M = 0\): Up counting mode (0 to 9, then resets to 0)
-    \item \(M = 1\): Down counting mode (9 to 0, then resets to 9)
-\end{itemize}
 
 \subsection*{7-Segment Display}
 The 7-segment display consists of seven LEDs arranged in a pattern to display decimal digits. A BCD-to-7-segment decoder converts the 4-bit BCD output from the counter into signals that illuminate the appropriate segments (labeled 'a' through 'g') to display digits 0--9.
@@ -1409,99 +1402,87 @@ In the above circuit $Q_{ij}$ represents $j^{th}$ bit of $i^{th}$ digit. That is
 \end{center}
 Connecting the output to 7447 Decoder and then Connecting the output of that to Seven segment Displays helps us to visualize the output
 \section*{Procedure}
-\begin{enumerate}
-    \item \textbf{Circuit Setup:}
-    \begin{itemize}
-        \item Connect four T flip-flops (using JK flip-flop ICs configured as T flip-flops) in series to create a 4-bit counter.
-        \item Wire the T inputs according to the derived logic equations.
-        \item Connect one push button to the clock input for up counting and the other through appropriate logic for down counting.
-        \item Connect the outputs (\(Q_3\), \(Q_2\), \(Q_1\), \(Q_0\)) to the BCD-to-7-segment decoder.
-        \item Connect the decoder outputs to the 7-segment display.
-        \item Use the oscilloscope and logic analyzer to verify clock signals and state transitions.
-    \end{itemize}
-    \item \textbf{Testing Up Counter:}
-    \begin{itemize}
-        \item Set the mode control \(M=0\) for up counting.
-        \item Press the up-count button repeatedly and observe the sequence on the 7-segment display.
-        \item Verify that the counter increments from 0 to 9 and then resets to 0.
-    \end{itemize}
-    \item \textbf{Testing Down Counter:}
-    \begin{itemize}
-        \item Set the mode control \(M=1\) for down counting.
-        \item Press the down-count button repeatedly and observe the sequence.
-        \item Verify that the counter decrements from 9 to 0 and then resets to 9.
-    \end{itemize}
-    \item \textbf{Verification:}
-    \begin{itemize}
-        \item Test the counter with different starting values.
-        \item Ensure proper transitions between up and down counting modes.
-    \end{itemize}
-\end{enumerate}
 
-\section*{Observations}
-\subsection*{Up Counter Operation}
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{Button Press} & \textbf{\(Q_3\,Q_2\,Q_1\,Q_0\)} & \textbf{Decimal} \\
-\hline
-Initial & 0 0 0 0 & 0 \\
-\hline
-Press 1 & 0 0 0 1 & 1 \\
-\hline
-Press 2 & 0 0 1 0 & 2 \\
-\hline
-Press 3 & 0 0 1 1 & 3 \\
-\hline
-Press 4 & 0 1 0 0 & 4 \\
-\hline
-Press 5 & 0 1 0 1 & 5 \\
-\hline
-Press 6 & 0 1 1 0 & 6 \\
-\hline
-Press 7 & 0 1 1 1 & 7 \\
-\hline
-Press 8 & 1 0 0 0 & 8 \\
-\hline
-Press 9 & 1 0 0 1 & 9 \\
-\hline
-Press 10 & 0 0 0 0 & 0 \\
-\hline
-\end{tabular}
-\end{center}
+\subsection*{1. Circuit Assembly}
+\begin{itemize}
+    \item Configure four JK flip-flops as T flip-flops by connecting both J and K inputs to the same control signal.
+    \item Implement T input logic for each flip-flop:
+    \begin{itemize}
+        \item \textbf{Up Counter:} $T_0 = 1$, $T_1 = \overline{Q_3}Q_0$, $T_2 = Q_1Q_0$, $T_3 = Q_2Q_1Q_0 + Q_3Q_0$
+        \item \textbf{Down Counter:} $T_0 = 1$, $T_1 = (Q_1 + Q_2 + Q_3)\overline{Q_0}$, $T_2 = (Q_2 + Q_3)\overline{Q_1}\overline{Q_0}$, $T_3 = \overline{Q_2}\overline{Q_1}\overline{Q_0}$
+    \end{itemize}
+    \item Design the mode selection logic using basic gates as shown in Figure 5.
+    \item Connect push buttons $B_1$ (for increment) and $B_2$ (for decrement) to provide manual clock pulses.
+    \item Attach the Q outputs to a BCD-to-7-segment decoder (7447) and then connect it to a 7-segment display.
+\end{itemize}
 
-\subsection*{Down Counter Operation}
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-\textbf{Button Press} & \textbf{\(Q_3\,Q_2\,Q_1\,Q_0\)} & \textbf{Decimal} \\
-\hline
-Initial & 1 0 0 1 & 9 \\
-\hline
-Press 1 & 1 0 0 0 & 8 \\
-\hline
-Press 2 & 0 1 1 1 & 7 \\
-\hline
-Press 3 & 0 1 1 0 & 6 \\
-\hline
-Press 4 & 0 1 0 1 & 5 \\
-\hline
-Press 5 & 0 1 0 0 & 4 \\
-\hline
-Press 6 & 0 0 1 1 & 3 \\
-\hline
-Press 7 & 0 0 1 0 & 2 \\
-\hline
-Press 8 & 0 0 0 1 & 1 \\
-\hline
-Press 9 & 0 0 0 0 & 0 \\
-\hline
-Press 10 & 1 0 0 1 & 9 \\
-\hline
-\end{tabular}
-\end{center}
+\subsection*{2. Power and Clock Setup}
+\begin{itemize}
+    \item Power the circuit using a 5V DC supply.
+    \item Optionally use an Arduino board to provide precise and stable clock signals.
+    \item Use a multimeter to verify all wiring and component connectivity.
+\end{itemize}
+
+\subsection*{3. Up Counter Testing}
+\begin{itemize}
+    \item Activate $B_1$ to select up-count mode.
+    \item Press the increment button to provide clock pulses.
+    \item Observe the 7-segment display for the following sequence: 0 → 1 → 2 → … → 9 → 0.
+\end{itemize}
+
+\subsection*{4. Down Counter Testing}
+\begin{itemize}
+    \item Activate $B_2$ to select down-count mode.
+    \item Press the decrement button to provide clock pulses.
+    \item Observe the 7-segment display for the following sequence: 9 → 8 → … → 0 → 9.
+\end{itemize}
+
+\subsection*{5. Verification and Troubleshooting}
+\begin{itemize}
+    \item Use an oscilloscope to check clock waveform integrity.
+    \item Monitor the output states using a logic analyzer to ensure correctness.
+    \item Confirm proper reset behavior at $0 \leftrightarrow 9$ transition points.
+    \item Debug logic gate outputs and T-input conditions in case of errors.
+\end{itemize}
+
+\section*{Observation}
+
+\subsection*{Up Counter}
+\begin{itemize}
+    \item The display starts at 0 and increments with each press of the increment button.
+    \item Valid BCD outputs from 0000 to 1001 (0 to 9 in decimal) are shown.
+    \item After reaching 9, the next pulse resets the counter to 0.
+\end{itemize}
+
+\subsection*{Down Counter}
+\begin{itemize}
+    \item The display starts at 9 and decrements with each press of the decrement button.
+    \item Valid BCD outputs from 1001 to 0000 (9 to 0) are shown.
+    \item After reaching 0, the next pulse resets the counter to 9.
+\end{itemize}
+
+\subsection*{Mode Switching}
+\begin{itemize}
+    \item Switching between modes does not reset the counter value.
+    \item The counter continues in the selected direction from its current state.
+    \item No invalid BCD states (e.g., 1010 to 1111) are observed.
+\end{itemize}
+
+\section*{Results}
+\begin{figure*}[!htb]
+    {\includegraphics[ width=0.4\textwidth,angle=90]{./figs/image1.jpeg}}
+    \hspace{\fill}
+    {\includegraphics[ width=0.4\textwidth,angle=90]{./figs/image2.jpeg}}
+\end{figure*}
+\FloatBarrier
+
+\begin{figure*}[!htb]
+    {\includegraphics[ width=0.4\textwidth,angle=90]{./figs/image3.jpeg}}
+    \hspace{\fill}
+    {\includegraphics[ width=0.4\textwidth,angle=90]{./figs/image4.jpeg}}
+\end{figure*}
+\FloatBarrier
 
 \section*{Conclusion}
 The BCD counter using T flip-flops was successfully designed and implemented with bidirectional counting capability. The counter correctly counts from 0 to 9 in up mode and from 9 to 0 in down mode, resetting appropriately at the boundaries. The use of push buttons to select the counting direction, along with a BCD-to-7-segment decoder for display, provides a clear demonstration of sequential logic in digital systems. This design can be extended to applications such as digital clocks, frequency counters, and event counters where bidirectional counting is required.
-
 \end{document}
