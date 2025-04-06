@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.31)  6 APR 2025 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.31)  6 APR 2025 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1073,20 +1073,28 @@ label is specified separately. See the documentation for more details. Backward
  compatibility may disappear in a future release. on input line 208.
 
 \@karnaughmap@local@cellcount@=\count364
+\@karnaughmap@local@northwest@=\count365
+\@karnaughmap@local@southeast@=\count366
 
 Package karnaugh-map Warning: The API for specifying variable labels have been 
 updated. You are currently using the old API(v1). In the new API each variable 
 label is specified separately. See the documentation for more details. Backward
- compatibility may disappear in a future release. on input line 220.
+ compatibility may disappear in a future release. on input line 221.
 
-\@karnaughmap@local@cellcount@=\count365
+\@karnaughmap@local@cellcount@=\count367
+\@karnaughmap@local@northwest@=\count368
+\@karnaughmap@local@southeast@=\count369
 
 Package karnaugh-map Warning: The API for specifying variable labels have been 
 updated. You are currently using the old API(v1). In the new API each variable 
 label is specified separately. See the documentation for more details. Backward
- compatibility may disappear in a future release. on input line 232.
+ compatibility may disappear in a future release. on input line 234.
 
-\@karnaughmap@local@cellcount@=\count366
+\@karnaughmap@local@cellcount@=\count370
+\@karnaughmap@local@northwest@=\count371
+\@karnaughmap@local@southeast@=\count372
+\@karnaughmap@local@northwest@=\count373
+\@karnaughmap@local@southeast@=\count374
 
 
 
@@ -1101,16 +1109,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Package karnaugh-map Warning: The API for specifying variable labels have been 
 updated. You are currently using the old API(v1). In the new API each variable 
 label is specified separately. See the documentation for more details. Backward
- compatibility may disappear in a future release. on input line 248.
+ compatibility may disappear in a future release. on input line 252.
 
-\@karnaughmap@local@cellcount@=\count367
+\@karnaughmap@local@cellcount@=\count375
+\@karnaughmap@local@northwest@=\count376
+\@karnaughmap@local@southeast@=\count377
+\@karnaughmap@local@northwest@=\count378
+\@karnaughmap@local@southeast@=\count379
+\@karnaughmap@local@northwest@=\count380
+\@karnaughmap@local@southeast@=\count381
 
 Package karnaugh-map Warning: The API for specifying variable labels have been 
 updated. You are currently using the old API(v1). In the new API each variable 
 label is specified separately. See the documentation for more details. Backward
- compatibility may disappear in a future release. on input line 260.
+ compatibility may disappear in a future release. on input line 267.
 
-\@karnaughmap@local@cellcount@=\count368
+\@karnaughmap@local@cellcount@=\count382
+\@karnaughmap@local@northwest@=\count383
+\@karnaughmap@local@southeast@=\count384
+\@karnaughmap@local@northwest@=\count385
+\@karnaughmap@local@southeast@=\count386
 
 
 
@@ -1125,9 +1143,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Package karnaugh-map Warning: The API for specifying variable labels have been 
 updated. You are currently using the old API(v1). In the new API each variable 
 label is specified separately. See the documentation for more details. Backward
- compatibility may disappear in a future release. on input line 272.
+ compatibility may disappear in a future release. on input line 281.
 
-\@karnaughmap@local@cellcount@=\count369
+\@karnaughmap@local@cellcount@=\count387
+\@karnaughmap@local@testcaseone@=\count388
+\@karnaughmap@local@testcasetwo@=\count389
+\@karnaughmap@local@coordinateonecounter@=\count390
+\@karnaughmap@local@coordinatetwocounter@=\count391
+\@karnaughmap@local@coordinateonecounter@=\count392
+\@karnaughmap@local@coordinatetwocounter@=\count393
 
 
 
@@ -1183,18 +1207,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-<./figs/image1.jpeg, id=80, 1204.5pt x 1606.0pt>
+<./figs/image1.jpeg, id=81, 1204.5pt x 1606.0pt>
 File: ./figs/image1.jpeg Graphic file (type jpg)
 <use ./figs/image1.jpeg>
-Package pdftex.def Info: ./figs/image1.jpeg  used on input line 1473.
+Package pdftex.def Info: ./figs/image1.jpeg  used on input line 1512.
 (pdftex.def)             Requested size: 181.18439pt x 241.57576pt.
-<./figs/image2.jpeg, id=81, 1204.5pt x 1606.0pt>
+<./figs/image2.jpeg, id=82, 1204.5pt x 1606.0pt>
 File: ./figs/image2.jpeg Graphic file (type jpg)
 <use ./figs/image2.jpeg>
-Package pdftex.def Info: ./figs/image2.jpeg  used on input line 1475.
+Package pdftex.def Info: ./figs/image2.jpeg  used on input line 1514.
 (pdftex.def)             Requested size: 181.18439pt x 241.57576pt.
 
-Overfull \hbox (35.40579pt too wide) in paragraph at lines 1473--1476
+Overfull \hbox (35.40579pt too wide) in paragraph at lines 1512--1515
 [][]   [] 
  []
 
@@ -1208,15 +1232,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12{/opt/texlive/2024/texmf-dist/fonts/enc/dvips/mnsymbol/MnSymbolA.enc}]
-<./figs/image3.jpeg, id=87, 1606.0pt x 1204.5pt>
+<./figs/image3.jpeg, id=88, 1606.0pt x 1204.5pt>
 File: ./figs/image3.jpeg Graphic file (type jpg)
 <use ./figs/image3.jpeg>
-Package pdftex.def Info: ./figs/image3.jpeg  used on input line 1480.
+Package pdftex.def Info: ./figs/image3.jpeg  used on input line 1519.
 (pdftex.def)             Requested size: 181.18439pt x 135.87717pt.
-<./figs/image4.jpeg, id=88, 1204.5pt x 1606.0pt>
+<./figs/image4.jpeg, id=89, 1204.5pt x 1606.0pt>
 File: ./figs/image4.jpeg Graphic file (type jpg)
 <use ./figs/image4.jpeg>
-Package pdftex.def Info: ./figs/image4.jpeg  used on input line 1482.
+Package pdftex.def Info: ./figs/image4.jpeg  used on input line 1521.
 (pdftex.def)             Requested size: 181.18439pt x 241.57576pt.
 
 
@@ -1233,21 +1257,17 @@ e4.jpeg>] (./report.aux)
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 62513 strings out of 473201
- 1529898 string characters out of 5685387
- 2321294 words of memory out of 5000000
- 85213 multiletter control sequences out of 15000+600000
+ 62658 strings out of 473201
+ 1534009 string characters out of 5685387
+ 2345354 words of memory out of 5000000
+ 85357 multiletter control sequences out of 15000+600000
  585683 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,14n,93p,703b,1068s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,14n,93p,746b,1068s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/texlive/2024/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol12.pfb></op
 t/texlive/2024/texmf-dist/fonts/type1/public/mnsymbol/MnSymbol8.pfb></opt/texli
 ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/texlive/2024
@@ -1259,10 +1279,10 @@ c/amsfonts/cm/cmr10.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr12.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r17.pfb></opt/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
 /opt/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on report.pdf (13 pages, 1616365 bytes).
+Output written on report.pdf (13 pages, 1620231 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
- 116 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
+ 166 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

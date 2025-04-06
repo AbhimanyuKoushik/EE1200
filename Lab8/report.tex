@@ -206,6 +206,7 @@ Since \(T_0 = 1\) for all cases, no Karnaugh map is required.
 \begin{center}
 \begin{karnaugh-map}[4][4][1][$Q_1Q_0$][$Q_3Q_2$]
 \manualterms{0,1,0,1,0,1,0,1,0,0,X,X,X,X,X,X}
+\implicant{1}{7}
 \end{karnaugh-map}
 \end{center}
 Thus, 
@@ -218,6 +219,7 @@ T_1 = \overline{Q_3}\,Q_0.
 \begin{center}
 \begin{karnaugh-map}[4][4][1][$Q_1Q_0$][$Q_3Q_2$]
 \manualterms{0,0,0,1,0,0,0,1,0,0,X,X,X,X,X,X}
+\implicant{3}{11}
 \end{karnaugh-map}
 \end{center}
 Thus, 
@@ -230,6 +232,8 @@ T_2 = Q_1\,Q_0.
 \begin{center}
 \begin{karnaugh-map}[4][4][1][$Q_1Q_0$][$Q_3Q_2$]
 \manualterms{0,0,0,0,0,0,0,1,0,1,X,X,X,X,X,X}
+\implicant{13}{11}
+\implicant{7}{15}
 \end{karnaugh-map}
 \end{center}
 Thus, 
@@ -246,6 +250,9 @@ Again, \(T_0 = 1\) for all cases.
 \begin{center}
 \begin{karnaugh-map}[4][4][1][$Q_1Q_0$][$Q_3Q_2$]
 \manualterms{0,0,1,0,1,0,1,0,1,0,X,X,X,X,X,X}
+\implicant{2}{10}
+\implicant{4}{12}
+\implicant{12}{8}
 \end{karnaugh-map}
 \end{center}
 Thus,
@@ -258,6 +265,8 @@ T_1 = Q_1\,\overline{Q_0} + Q_2\,\overline{Q_1}\,\overline{Q_0} + Q_3\,\overline
 \begin{center}
 \begin{karnaugh-map}[4][4][1][$Q_1Q_0$][$Q_3Q_2$]
 \manualterms{0,0,0,0,1,0,0,0,1,0,X,X,X,X,X,X}
+\implicant{4}{12}
+\implicant{12}{8}
 \end{karnaugh-map}
 \end{center}
 Thus,
@@ -270,6 +279,7 @@ T_2 = Q_2\,\overline{Q_1}\,\overline{Q_0} + Q_3\,\overline{Q_1}\,\overline{Q_0}.
 \begin{center}
 \begin{karnaugh-map}[4][4][1][$Q_1Q_0$][$Q_3Q_2$]
 \manualterms{1,0,0,0,0,0,0,0,1,0,X,X,X,X,X,X}
+\implicantedge{0}{0}{8}{8}
 \end{karnaugh-map}
 \end{center}
 Thus,
@@ -279,13 +289,50 @@ T_3 = \overline{Q_2}\,\overline{Q_1}\,\overline{Q_0}.
 The Karnaugh maps for Down counter can be simplified further but the reason to leave them as give is, take $T = \overline{Q_1}\,\overline{Q_0}$ then:
 \begin{enumerate}
     \item $T_0 = 1$
-    \item $T_1 = Q_1\,\overline{Q_0} = T_2$
+    \item $T_1 = Q_1\,\overline{Q_0} + T_2$
     \item $T_2 = (Q_1 + Q_2)T$
     \item $T_3 = \overline{Q_2}\,T$
 \end{enumerate}
 Which are easier to make in Circuit
 
 \newpage
+
+\section*{Converting JK Flip flop to T Flip flop}
+A JK Flip-Flop can be configured as a T Flip-Flop by connecting both J and K inputs to the same signal (T). When J=K=1, the flip-flop toggles with each clock pulse, which is the behavior of a T flip-flop with T=1.
+
+\begin{figure}[!ht]
+\centering
+\resizebox{0.6\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+
+\draw  (4.25,12.5) rectangle (8.75,7.75);
+\draw (4.25,11.5) to[short] (2.75,11.5);
+\node at (4.25,11.5) [circ] {};
+\node at (4.25,8.75) [circ] {};
+\node at (8.75,11.5) [circ] {};
+\node at (8.75,8.75) [circ] {};
+\node [font=\LARGE] at (4.75,11.5) {J};
+\node [font=\LARGE] at (4.75,10.25) {K};
+\draw (4.25,10.25) to[short] (2.75,10.25);
+\node at (4.25,10.25) [circ] {};
+\draw (4.25,9.25) to[short] (4.75,8.75);
+\draw (4.75,8.75) to[short] (4.25,8.25);
+\node [font=\LARGE] at (5.5,8.75) {CLK};
+\node [font=\LARGE] at (8.25,11.5) {Q};
+\node [font=\LARGE] at (8.25,8.75) {Q'};
+\draw (2.75,11.5) to[short] (2.75,10.25);
+\draw (2.75,11) to[short] (1.25,11);
+\node [font=\LARGE] at (0.75,11) {T};
+\draw (4.25,8.75) to[short] (1.25,8.75);
+\draw [ dashed] (2,13.25) rectangle  (10.75,7.25);
+\draw (8.75,11.5) to[short] (12,11.5);
+\draw (8.75,8.75) to[short] (12,8.75);
+\end{circuitikz}
+}%
+\caption{Constructing T Flipflop using JK Flipflop}
+\end{figure}
+\FloatBarrier
 
 \section*{Circuit Diagram}
 
@@ -1403,7 +1450,7 @@ In the above circuit $Q_{ij}$ represents $j^{th}$ bit of $i^{th}$ digit. That is
 Connecting the output to 7447 Decoder and then Connecting the output of that to Seven segment Displays helps us to visualize the output
 \section*{Procedure}
 
-\subsection*{1. Circuit Assembly}
+\subsection*{Circuit Assembly}
 \begin{itemize}
     \item Configure four JK flip-flops as T flip-flops by connecting both J and K inputs to the same control signal.
     \item Implement T input logic for each flip-flop:
@@ -1416,28 +1463,27 @@ Connecting the output to 7447 Decoder and then Connecting the output of that to 
     \item Attach the Q outputs to a BCD-to-7-segment decoder (7447) and then connect it to a 7-segment display.
 \end{itemize}
 
-\subsection*{2. Power and Clock Setup}
+\subsection*{Power and Clock Setup}
 \begin{itemize}
     \item Power the circuit using a 5V DC supply.
-    \item Optionally use an Arduino board to provide precise and stable clock signals.
     \item Use a multimeter to verify all wiring and component connectivity.
 \end{itemize}
 
-\subsection*{3. Up Counter Testing}
+\subsection*{Up Counter Testing}
 \begin{itemize}
     \item Activate $B_1$ to select up-count mode.
     \item Press the increment button to provide clock pulses.
     \item Observe the 7-segment display for the following sequence: 0 → 1 → 2 → … → 9 → 0.
 \end{itemize}
 
-\subsection*{4. Down Counter Testing}
+\subsection*{Down Counter Testing}
 \begin{itemize}
     \item Activate $B_2$ to select down-count mode.
     \item Press the decrement button to provide clock pulses.
     \item Observe the 7-segment display for the following sequence: 9 → 8 → … → 0 → 9.
 \end{itemize}
 
-\subsection*{5. Verification and Troubleshooting}
+\subsection*{Verification and Troubleshooting}
 \begin{itemize}
     \item Use an oscilloscope to check clock waveform integrity.
     \item Monitor the output states using a logic analyzer to ensure correctness.
@@ -1461,13 +1507,6 @@ Connecting the output to 7447 Decoder and then Connecting the output of that to 
     \item After reaching 0, the next pulse resets the counter to 9.
 \end{itemize}
 
-\subsection*{Mode Switching}
-\begin{itemize}
-    \item Switching between modes does not reset the counter value.
-    \item The counter continues in the selected direction from its current state.
-    \item No invalid BCD states (e.g., 1010 to 1111) are observed.
-\end{itemize}
-
 \section*{Results}
 \begin{figure*}[!htb]
     {\includegraphics[ width=0.4\textwidth,angle=90]{./figs/image1.jpeg}}
@@ -1484,5 +1523,5 @@ Connecting the output to 7447 Decoder and then Connecting the output of that to 
 \FloatBarrier
 
 \section*{Conclusion}
-The BCD counter using T flip-flops was successfully designed and implemented with bidirectional counting capability. The counter correctly counts from 0 to 9 in up mode and from 9 to 0 in down mode, resetting appropriately at the boundaries. The use of push buttons to select the counting direction, along with a BCD-to-7-segment decoder for display, provides a clear demonstration of sequential logic in digital systems. This design can be extended to applications such as digital clocks, frequency counters, and event counters where bidirectional counting is required.
+The BCD counter using T flip-flops was successfully designed and implemented with bidirectional counting capability. The counter correctly counts from 0 to 9 in up mode and from 9 to 0 in down mode, resetting appropriately at the boundaries. The use of push buttons to select the counting direction, along with a BCD-to-7-segment decoder for display, provides a clear demonstration of sequential logic in digital systems. This design can be extended to applications such as digital clocks, frequency counters, and event counters where bidirectional counting is required. The Images and Videos of the Circuit can be found \href{https://github.com/AbhimanyuKoushik/EE1200/tree/main/Lab8/figs}{\textbf{here}}
 \end{document}
