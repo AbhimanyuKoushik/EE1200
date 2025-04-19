@@ -1453,6 +1453,7 @@ Connecting the output to 7447 Decoder and then Connecting the output of that to 
 \subsection*{Circuit Assembly}
 \begin{itemize}
     \item Configure four JK flip-flops as T flip-flops by connecting both J and K inputs to the same control signal.
+    \item Connect all $\overline{PRE}$ to high. 
     \item Implement T input logic for each flip-flop:
     \begin{itemize}
         \item \textbf{Up Counter:} $T_0 = 1$, $T_1 = \overline{Q_3}Q_0$, $T_2 = Q_1Q_0$, $T_3 = Q_2Q_1Q_0 + Q_3Q_0$
@@ -1460,6 +1461,7 @@ Connecting the output to 7447 Decoder and then Connecting the output of that to 
     \end{itemize}
     \item Design the mode selection logic using basic gates as shown in Figure 5.
     \item Connect push buttons $B_1$ (for increment) and $B_2$ (for decrement) to provide manual clock pulses.
+    \item Connect a push button to $\overline{CLR}$ of every flip flop to $High$ so that if it pushed, both digits return to zero, thus acting as a Reset button. 
     \item Attach the Q outputs to a BCD-to-7-segment decoder (7447) and then connect it to a 7-segment display.
 \end{itemize}
 
